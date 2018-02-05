@@ -4,7 +4,7 @@ const run = require('../command/run')
 
 require('yargs')
   .usage('iGroot Business Component Dev Builder')
-  .command('run', 'debugging your iGroot business component', {}, argv => run())
+  .command('dev', 'debugging your iGroot business component', {}, argv => run())
   .demandCommand()
   .help()
   .alias('h', 'help')

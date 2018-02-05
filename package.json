@@ -1,6 +1,6 @@
 {
   "name": "igroot-business-component-dev-builder",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "scripts": {
     "run": "node build/dev-server.js"
