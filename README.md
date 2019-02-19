@@ -11,11 +11,17 @@ npm install -g igroot-business-component-dev-builder
 const builder = require('igroot-business-component-dev-builder')
 
 // 启动开发环境
-builder.run()
+builder.dev()
+
+// 发布业务组件至 npm，并推送至 git
+builder.publish()
 ```
 #### 命令调用(开发调试用)
 命令的执行依赖于当前路径，因此，请在项目根目录中使用
 ``` bash
 # 启动应用
-igroot-bcd-builder run
+igroot-bcd-builder dev
+
+# 发布业务组件
+igroot-bcd-builder publish
 ```

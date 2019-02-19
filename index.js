@@ -1,3 +1,4 @@
 module.exports = {
-  dev: require('./build/dev-server')
+  dev: require('./command/dev'),
+  publish: require('./command/publish')
 }

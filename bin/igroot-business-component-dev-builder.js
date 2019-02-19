@@ -1,10 +1,12 @@
 #!/usr/bin/env node
 
-const run = require('../command/run')
+const dev = require('../command/dev')
+const publish = require('../command/publish')
 
 require('yargs')
   .usage('iGroot Business Component Dev Builder')
-  .command('dev', 'debugging your iGroot business component', {}, argv => run())
+  .command('dev', 'debugging your iGroot business component', {}, argv => dev())
+  .command('publish', '', {}, argv => publish())
   .demandCommand()
   .help()
   .alias('h', 'help')
